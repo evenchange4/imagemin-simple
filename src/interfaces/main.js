@@ -1,4 +1,3 @@
-/* eslint no-unused-expressions: 0 */
 // @flow
 import yargs from 'yargs';
 import chalk from 'chalk';

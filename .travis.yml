@@ -19,7 +19,7 @@ install:
 
 script:
   - yarn run eslint
-  - yarn run flow
+  - yarn run flow-coverage
   - yarn run build
 
 deploy:

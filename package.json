@@ -15,7 +15,8 @@
   "scripts": {
     "build": "hsu-scripts build src",
     "test": "NODE_ENV='cjs' babel-node src/bin.js",
-    "flow": "hsu-scripts flow --threshold 61",
+    "flow": "flow",
+    "flow-coverage": "hsu-scripts flow --threshold 65",
     "eslint": "eslint ./",
     "format": "prettier --write '**/*.{js,json,md,css,yaml,yml}' '*.{js,json,md,css,yaml,yml}'",
     "changelog": "github-changes -o evenchange4 -r hsu-scripts -b master -f ./CHANGELOG.md --order-semver --use-commit-body"
