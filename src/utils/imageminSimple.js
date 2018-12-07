@@ -2,24 +2,34 @@
 import path from 'path';
 import globby from 'globby';
 import imagemin from 'imagemin';
-import { DEFAULT_PLUGINS, DEFAULT_PATTERN } from './constants';
+import imageminJpegtran from 'imagemin-jpegtran';
+import imageminPngquant from 'imagemin-pngquant';
+import imageminSvgo from 'imagemin-svgo';
+import imageminGifsicle from 'imagemin-gifsicle';
+import { DEFAULT_PATTERN } from './constants';
 import { type CliArguments } from './type.flow';
 import log from './log';
 
-const imageminSimple = async ({ pattern }: CliArguments) => {
+const imageminSimple = async ({ pattern, plugin }: CliArguments) => {
   try {
     const imagePaths = await globby([pattern, ...DEFAULT_PATTERN]);
-    log(JSON.stringify(imagePaths, null, 2));
+    if (imagePaths.length > 0) log(JSON.stringify(imagePaths, null, 2));
+
+    const plugins = [
+      plugin.includes('imagemin-jpegtran') && imageminJpegtran(),
+      plugin.includes('imagemin-pngquant') &&
+        imageminPngquant({ quality: '65-80' }),
+      plugin.includes('imagemin-svgo') && imageminSvgo(),
+      plugin.includes('imagemin-gifsicle') && imageminGifsicle(),
+    ].filter(Boolean);
+
     const imageminPromise = imagePaths.map(imagePath =>
-      imagemin([imagePath], path.dirname(imagePath), {
-        plugins: DEFAULT_PLUGINS,
-      }),
+      imagemin([imagePath], path.dirname(imagePath), { plugins }),
     );
     const files = await Promise.all(imageminPromise);
     log(`> Minify ${files.length} images successfully.`);
   } catch (error) {
-    log(error);
-    process.exit(1);
+    throw error;
   }
 };
 

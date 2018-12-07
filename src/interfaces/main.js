@@ -4,10 +4,12 @@ import yargs from 'yargs';
 import chalk from 'chalk';
 import { version } from '../../package.json';
 import { type CliArguments } from '../utils/type.flow';
+import { DEFAULT_PLUGIN } from '../utils/constants';
 
 const main = (): CliArguments => {
   const {
-    _: [, pattern],
+    _: [pattern],
+    plugin,
   } = yargs
     .usage(
       `Usage: ${chalk.green(
@@ -16,7 +18,15 @@ const main = (): CliArguments => {
     )
     .demandCommand(1, 1, 'Error: Missing <command>')
     .strict()
+    .options({
+      plugin: {
+        describe: `The list of plugins to use.`,
+        type: 'array',
+        default: DEFAULT_PLUGIN,
+      },
+    })
     .example(`$0 '**/*.{jpg,png,JPG,PNG,svg,gif}'`, 'Simple example')
+    .example(`$0 '**/*.png' --plugin imagemin-pngquant`)
     .alias('v', 'version')
     .alias('h', 'help')
     .version(version)
@@ -29,7 +39,7 @@ const main = (): CliArguments => {
       yargs.showHelp();
     }).argv;
 
-  return { pattern };
+  return { pattern, plugin };
 };
 
 export default main;
