@@ -24,7 +24,7 @@ const main = (): CliArguments => {
         default: DEFAULT_PLUGIN,
       },
     })
-    .example(`$0 '**/*.{jpg,png,JPG,PNG,svg,gif}'`, 'Simple example')
+    .example(`$0 '**/*.{jpg,png,JPG,PNG,svg,gif}'`)
     .example(`$0 '**/*.png' --plugin imagemin-pngquant`)
     .alias('v', 'version')
     .alias('h', 'help')
