@@ -19,7 +19,7 @@
     "flow-coverage": "hsu-scripts flow --threshold 65",
     "eslint": "eslint ./",
     "format": "prettier --write '**/*.{js,json,md,css,yaml,yml}' '*.{js,json,md,css,yaml,yml}'",
-    "changelog": "github-changes -o evenchange4 -r hsu-scripts -b master -f ./CHANGELOG.md --order-semver --use-commit-body"
+    "changelog": "github-changes -o evenchange4 -r imagemin-simple -b master -f ./CHANGELOG.md --order-semver --use-commit-body"
   },
   "dependencies": {
     "@babel/runtime": "^7.2.0",
@@ -33,14 +33,14 @@
     "yargs": "^12.0.5"
   },
   "devDependencies": {
-    "@babel/node": "^7.2.0",
-    "eslint": "^5.9.0",
-    "flow-bin": "^0.87.0",
-    "github-changes": "^1.1.2",
-    "hsu-scripts": "^0.2.0",
-    "husky": "^1.2.0",
-    "lint-staged": "^8.1.0",
-    "prettier": "^1.15.3"
+    "@babel/node": "7.2.0",
+    "eslint": "5.9.0",
+    "flow-bin": "0.87.0",
+    "github-changes": "1.1.2",
+    "hsu-scripts": "0.2.0",
+    "husky": "1.2.0",
+    "lint-staged": "8.1.0",
+    "prettier": "1.15.3"
   },
   "babel": {
     "presets": [
@@ -62,5 +62,17 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "description": "Replace images with minified one.",
+  "author": "Michael Hsu <evenchange4@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evenchange4/imagemin-simple/issues",
+    "email": "evenchange4@gmail.com"
+  },
+  "homepage": "https://github.com/evenchange4/imagemin-simple#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evenchange4/imagemin-simple.git"
   }
 }

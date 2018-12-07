@@ -249,7 +249,7 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@babel/node@^7.2.0":
+"@babel/node@7.2.0":
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@babel/node/-/node-7.2.0.tgz#0b601be8ef03897923e3908dc18129836d44e6fa"
   integrity sha512-RFwVH5xWpwd4SfkOI0WsK9AnF5o+C9iMTvUkkTb7jUNaiDieV8BGK38t74bTPjgc4FCxSAWNKqaqgDW4fenkyA==
@@ -2415,7 +2415,7 @@ eslint-visitor-keys@^1.0.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
   integrity sha512-qzm/XxIbxm/FHyH341ZrbnMUpe+5Bocte9xkmFMzPMjRaZMcXww+MpBptFvtU+79L362nqiLhekCxCxDPaUMBQ==
 
-eslint@^5.9.0:
+eslint@5.9.0:
   version "5.9.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-5.9.0.tgz#b234b6d15ef84b5849c6de2af43195a2d59d408e"
   integrity sha512-g4KWpPdqN0nth+goDNICNXGfJF7nNnepthp46CAlJoJtC5K/cLu3NgCM3AHu1CkJ5Hzt9V0Y0PBAO6Ay/gGb+w==
@@ -2877,7 +2877,7 @@ flow-annotation-check@1.8.1:
     glob "7.1.1"
     load-pkg "^3.0.1"
 
-flow-bin@^0.87.0:
+flow-bin@0.87.0:
   version "0.87.0"
   resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.87.0.tgz#fab7f984d8cc767e93fa9eb01cf7d57ed744f19d"
   integrity sha512-mnvBXXZkUp4y6A96bR5BHa3q1ioIIN2L10w5osxJqagAakTXFYZwjl0t9cT3y2aCEf1wnK6n91xgYypQS/Dqbw==
@@ -3110,7 +3110,7 @@ gifsicle@^4.0.0:
     execa "^1.0.0"
     logalot "^2.0.0"
 
-github-changes@^1.1.2:
+github-changes@1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/github-changes/-/github-changes-1.1.2.tgz#0411c1995dd73541a3b0b9cd341073613d02120b"
   integrity sha512-S4lzHQHyPSyHm22JjE+Vsyr8/d797NPmYYpBqwfkPj9qHIbSwENoqKngyfGbaVbmPFTeE6QMgDbcX12TWy+fpg==
@@ -3406,7 +3406,7 @@ hosted-git-info@^2.1.4:
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.7.1.tgz#97f236977bd6e125408930ff6de3eec6281ec047"
   integrity sha512-7T/BxH19zbcCTa8XkMlbK5lTo1WtgkFi3GvdWEyNuc4Vex7/9Dqbnpsf4JMydcfj9HCg4zUWFTL3Za6lapg5/w==
 
-hsu-scripts@^0.2.0:
+hsu-scripts@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/hsu-scripts/-/hsu-scripts-0.2.0.tgz#65d1101a361173444f66e5a0e3cc0f78787965cf"
   integrity sha512-q7n3ie31QRUy2EdO88EwqvqiRu0zTl6/f8LB+vSkC71IOYob6yqtGLUi2fn7Xjwi5bUzC3zPtbEUp3FU88fYrQ==
@@ -3461,7 +3461,7 @@ http-signature@~0.10.0:
     assert-plus "^0.1.5"
     ctype "0.5.3"
 
-husky@^1.2.0:
+husky@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/husky/-/husky-1.2.0.tgz#d631dda1e4a9ee8ba69a10b0c51a0e2c66e711e5"
   integrity sha512-/ib3+iycykXC0tYIxsyqierikVa9DA2DrT32UEirqNEFVqOj1bFMTgP3jAz8HM7FgC/C8pc/BTUa9MV2GEkZaA==
@@ -4242,7 +4242,7 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-lint-staged@^8.1.0:
+lint-staged@8.1.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-8.1.0.tgz#dbc3ae2565366d8f20efb9f9799d076da64863f2"
   integrity sha512-yfSkyJy7EuVsaoxtUSEhrD81spdJOe/gMTGea3XaV7HyoRhTb9Gdlp6/JppRZERvKSEYXP9bjcmq6CA5oL2lYQ==
@@ -5376,7 +5376,7 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^1.15.3:
+prettier@1.15.3:
   version "1.15.3"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.15.3.tgz#1feaac5bdd181237b54dbe65d874e02a1472786a"
   integrity sha512-gAU9AGAPMaKb3NNSUUuhhFAS7SCO4ALTN4nRIn6PJ075Qd28Yn2Ig2ahEJWdJwJmlEBTUfC7mMUSFy8MwsOCfg==

@@ -18,8 +18,6 @@ $ npx imagemin-simple '**/*.{jpg,png,JPG,PNG,svg,gif}'
 
 ## API
 
-### Build
-
 ```bash
 $ npx imagemin-simple -h
 
