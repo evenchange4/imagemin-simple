@@ -1,5 +1,15 @@
 ## Change Log
 
+### v0.1.1 (2018/12/12 08:46 +00:00)
+
+- [a53a590](https://github.com/evenchange4/imagemin-simple/commit/a53a5906af681741837af659db67d3b592e3acc3) 0.1.1 (@evenchange4)
+- [#7](https://github.com/evenchange4/imagemin-simple/pull/7) tests: add tests & use node 11.4.0 (#7) (@evenchange4)
+- [#5](https://github.com/evenchange4/imagemin-simple/pull/5) chore(deps): update dependency flow-bin to v0.88.0 (#5) (@renovate[bot])
+- [ebd815e](https://github.com/evenchange4/imagemin-simple/commit/ebd815e59b87050773befde48cea8489776a6d4d) fix: add missing @flow annotation (@evenchange4)
+- [#3](https://github.com/evenchange4/imagemin-simple/pull/3) chore(deps): update dependency hsu-scripts to v0.2.1 (#3) (@renovate[bot])
+- [#2](https://github.com/evenchange4/imagemin-simple/pull/2) chore(deps): update dependency eslint to v5.10.0 (#2) (@renovate[bot])
+- [17402b4](https://github.com/evenchange4/imagemin-simple/commit/17402b4e569bd0d2ffc987f1de7bead975ac4d1a) docs(CHANGELOG): release 0.1.0 (@evenchange4)
+
 ### v0.1.0 (2018/12/07 06:46 +00:00)
 
 - [20c91cb](https://github.com/evenchange4/imagemin-simple/commit/20c91cb138c400979fb5f0d394b08783742b0b36) 0.1.0 (@evenchange4)
