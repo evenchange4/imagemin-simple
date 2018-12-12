@@ -35,7 +35,9 @@ const main = (): CliArguments => {
     )
     .fail((msg, err) => {
       if (err) throw err; // preserve stack
+      console.error(chalk.red(msg)); // eslint-disable-line
       yargs.showHelp();
+      process.exit(1);
     }).argv;
 
   return { pattern, plugin };
