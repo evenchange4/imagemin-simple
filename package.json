@@ -14,9 +14,11 @@
   ],
   "scripts": {
     "build": "hsu-scripts build src",
-    "test": "NODE_ENV='cjs' babel-node src/bin.js",
+    "help": "NODE_ENV='cjs' babel-node src/bin.js",
+    "test": "NODE_ENV='test' jest --coverage",
+    "test:watch": "npm run test -- --watch",
     "flow": "flow",
-    "flow-coverage": "hsu-scripts flow --threshold 65",
+    "flow-coverage": "hsu-scripts flow --threshold 79",
     "eslint": "eslint ./",
     "format": "prettier --write '**/*.{js,json,md,css,yaml,yml}' '*.{js,json,md,css,yaml,yml}'",
     "changelog": "github-changes -o evenchange4 -r imagemin-simple -b master -f ./CHANGELOG.md --order-semver --use-commit-body"
@@ -34,13 +36,38 @@
   },
   "devDependencies": {
     "@babel/node": "7.2.0",
+    "codecov": "3.1.0",
     "eslint": "5.10.0",
     "flow-bin": "0.88.0",
     "github-changes": "1.1.2",
-    "hsu-scripts": "0.2.2",
+    "hsu-scripts": "0.2.3",
     "husky": "1.2.0",
+    "jest": "23.6.0",
     "lint-staged": "8.1.0",
     "prettier": "1.15.3"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js",
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/*.test.js",
+      "!src/**/*.example.js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/lib/",
+      "<rootDir>/es/"
+    ],
+    "resetMocks": true,
+    "resetModules": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 83,
+        "functions": 50,
+        "lines": 53,
+        "statements": 54
+      }
+    }
   },
   "babel": {
     "presets": [

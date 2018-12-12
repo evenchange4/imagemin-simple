@@ -1,5 +1,5 @@
 // @flow
-import main from './interfaces/main';
+import main from './clis/main';
 import { imageminSimple } from './index';
 
 const run = async () => {

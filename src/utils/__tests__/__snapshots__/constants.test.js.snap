@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return constants correctly 1`] = `
+Object {
+  "DEFAULT_PATTERN": Array [
+    "!node_modules",
+  ],
+  "DEFAULT_PLUGIN": Array [
+    "imagemin-jpegtran",
+    "imagemin-pngquant",
+    "imagemin-svgo",
+    "imagemin-gifsicle",
+  ],
+  "__esModule": true,
+}
+`;
