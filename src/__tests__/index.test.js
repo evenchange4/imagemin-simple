@@ -1,8 +1,8 @@
 // @flow
 import * as Modules from '../index';
 
-it('should expose main functions', () => {
-  expect(Modules).toHaveProperty('main');
+it('should expose help functions', () => {
+  expect(Modules).toHaveProperty('help');
 });
 
 it('should expose utils functions', () => {

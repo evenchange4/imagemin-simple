@@ -5,9 +5,9 @@ import { version } from '../../package.json';
 import { type CliArguments } from '../utils/type.flow';
 import { DEFAULT_PLUGIN } from '../utils/constants';
 
-const main = (): CliArguments => {
+const imagemin = (): CliArguments => {
   const {
-    _: [pattern],
+    _: [, pattern],
     plugin,
   } = yargs
     .usage(
@@ -15,7 +15,7 @@ const main = (): CliArguments => {
         '$0',
       )} <pattern> [options]\n<pattern>\t Glob pattern to specify files.`,
     )
-    .demandCommand(1, 1, 'Error: Missing <command>')
+    .demandCommand(2, 'Error: Missing <pattern>')
     .strict()
     .options({
       plugin: {
@@ -24,8 +24,8 @@ const main = (): CliArguments => {
         default: DEFAULT_PLUGIN,
       },
     })
-    .example(`$0 '**/*.{jpg,png,JPG,PNG,svg,gif}'`)
-    .example(`$0 '**/*.png' --plugin imagemin-pngquant`)
+    .example(`$0 imagemin '**/*.{jpg,png,JPG,PNG,svg,gif}'`)
+    .example(`$0 imagemin '**/*.png' --plugin imagemin-pngquant`)
     .alias('v', 'version')
     .alias('h', 'help')
     .version(version)
@@ -43,4 +43,4 @@ const main = (): CliArguments => {
   return { pattern, plugin };
 };
 
-export default main;
+export default imagemin;
