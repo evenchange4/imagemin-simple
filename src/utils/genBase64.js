@@ -13,14 +13,14 @@ const genBase64 = async ({ pattern, outputFile }: Base64Arguments) => {
     if (imagePaths.length > 0) log(JSON.stringify(imagePaths, null, 2));
 
     // Note: 1. gen base64 images and metadata
-    const base64Imgs: Base64Image = await Promise.all(
+    const base64Images: Base64Image = await Promise.all(
       imagePaths.map(readBase64Image),
     );
 
     // Note: 2. output json format
     const results: { [string]: Base64Image } = R.indexBy(
       R.prop('imagePath'),
-      base64Imgs,
+      base64Images,
     );
     fs.writeFileSync(outputFile, JSON.stringify(results, null, 2));
     log(
