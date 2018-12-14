@@ -10,10 +10,7 @@ jest.mock('../readBase64Image', () => async () => ({
 
 it('should return base64 json correctly', async () => {
   const pattern = path.resolve(process.cwd(), '**/*.{jpg,png,JPG,PNG}');
-  const outputFile = path.resolve(
-    process.cwd(),
-    'node_modules/.cache/base64.json',
-  );
+  const outputFile = path.resolve(process.cwd(), './geBase64.test.json');
   const spy = jest.spyOn(fs, 'writeFileSync');
 
   await genBase64({ pattern, outputFile });
