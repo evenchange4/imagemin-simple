@@ -1,6 +1,6 @@
 // @flow
 import path from 'path';
-import * as fs from 'fs-extra';
+import fsJson from 'fs-extra/lib/json';
 import genBase64 from '../genBase64';
 
 jest.mock('../readBase64Image', () => async () => ({
@@ -14,7 +14,7 @@ it('should return base64 json correctly', async () => {
     process.cwd(),
     'node_modules/.cache/geBase64.test.json',
   );
-  const spy = jest.spyOn(fs, 'writeJson');
+  const spy = jest.spyOn(fsJson, 'writeJson');
 
   await genBase64({ pattern, outputFile });
   expect(spy.mock.calls).toMatchSnapshot();
