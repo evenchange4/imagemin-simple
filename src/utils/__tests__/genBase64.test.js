@@ -17,5 +17,5 @@ it('should return base64 json correctly', async () => {
   const spy = jest.spyOn(fsJson, 'writeJson');
 
   await genBase64({ pattern, outputFile });
-  expect(spy.mock.calls).toMatchSnapshot();
+  expect(spy.mock.calls[0][1]).toMatchSnapshot();
 });
