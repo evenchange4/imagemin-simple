@@ -2,24 +2,19 @@
 // @flow
 const mockCliArguments = {
   pattern: 'pattern',
-  plugin: [
-    'imagemin-jpegtran',
-    'imagemin-pngquant',
-    'imagemin-svgo',
-    'imagemin-gifsicle',
-  ],
+  plugin: ['jpegtran', 'pngquant', 'svgo', 'gifsicle'],
 };
 
-it('should exec imageminSimple correctly', async () => {
+it('should exec toImagemin correctly', async () => {
   expect.assertions(1);
 
   const spy = jest.spyOn(global.console, 'log');
   // Note: Mock override
   jest.doMock('globby', () => async () => []);
-  const imageminSimple = require('../imageminSimple').default;
+  const toImagemin = require('../toImagemin').default;
 
   try {
-    await imageminSimple(mockCliArguments);
+    await toImagemin(mockCliArguments);
   } catch (error) {
     expect(error.message).toBeUndefined();
   } finally {
@@ -28,16 +23,16 @@ it('should exec imageminSimple correctly', async () => {
   }
 });
 
-it('should exec imageminSimple correctly with files', async () => {
+it('should exec toImagemin correctly with files', async () => {
   expect.assertions(3);
 
   const spy = jest.spyOn(global.console, 'log');
   // Note: Mock override
   jest.doMock('globby', () => async () => ['file1.png', 'file2.gif']);
-  const imageminSimple = require('../imageminSimple').default;
+  const toImagemin = require('../toImagemin').default;
 
   try {
-    await imageminSimple(mockCliArguments);
+    await toImagemin(mockCliArguments);
   } catch (error) {
     expect(error.message).toBeUndefined();
   } finally {
@@ -48,17 +43,17 @@ it('should exec imageminSimple correctly with files', async () => {
   }
 });
 
-it('should exec imageminSimple with errors', async () => {
+it('should exec toImagemin with errors', async () => {
   expect.assertions(1);
 
   // Note: Mock override
   jest.doMock('globby', () => async () => {
     throw new Error('error');
   });
-  const imageminSimple = require('../imageminSimple').default;
+  const toImagemin = require('../toImagemin').default;
 
   try {
-    await imageminSimple(mockCliArguments);
+    await toImagemin(mockCliArguments);
   } catch (error) {
     expect(error.message).toContain(`error`);
   }

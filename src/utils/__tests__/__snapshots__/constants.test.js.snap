@@ -2,14 +2,21 @@
 
 exports[`should return constants correctly 1`] = `
 Object {
+  "DEFAULT_OUTPUT_FILE": "./base64.json",
   "DEFAULT_PATTERN": Array [
-    "!node_modules",
+    "!**/node_modules",
+    "!**/coverage",
+    "!**/es",
+    "!**/lib",
+    "!**/storybook-static",
+    "!**/lib",
+    "!**/.next",
   ],
   "DEFAULT_PLUGIN": Array [
-    "imagemin-jpegtran",
-    "imagemin-pngquant",
-    "imagemin-svgo",
-    "imagemin-gifsicle",
+    "jpegtran",
+    "pngquant",
+    "svgo",
+    "gifsicle",
   ],
   "__esModule": true,
 }

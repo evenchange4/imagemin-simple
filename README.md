@@ -12,29 +12,85 @@
 
 ## Usage
 
+### imagemin
+
 ```bash
-$ npx imagemin-simple '**/*.{jpg,png,JPG,PNG,svg,gif}'
+$ npx imagemin-simple imagemin '**/*.{jpg,png,JPG,PNG,svg,gif}'
 ```
+
+### base64
+
+```bash
+$ npx imagemin-simple base64 '**/*.{jpg,png,JPG,PNG}' --output-file base64.json
+```
+
+<details>
+<summary>output</summary>
+
+```json
+{
+  "test-content1/project1/images/ai-image.jpg": {
+    "imagePath": "test-content1/project1/images/ai-image.jpg",
+    "width": 1000,
+    "height": 449,
+    "format": "jpeg",
+    "base64": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANAB4DASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAQYEBQcI/8QAJhAAAgEDAQcFAAAAAAAAAAAAAQIDAAQRBQYSExQxQVEhUpHB8P/EABUBAQEAAAAAAAAAAAAAAAAAAAQF/8QAGxEBAAICAwAAAAAAAAAAAAAAAQACAyESIjH/2gAMAwEAAhEDEQA/AOfo7aQIjvjhsxXI81ZPFHDDGzMDxBld3xQtMSo0AAXcQEP1J7/dSb6AchGSSRGhKgeg64pldSPc5ewaPcRW2qWdxMhliimSRo/cAwJFOW3OoW9/rIutMjaOFkwyFcFWJzj93pCsXIniYdVYH4rQNubjltH0iZYoTLcRJK7lBvElT4pGN0sn5zsAT//Z"
+  },
+  ...
+}
+
+```
+
+</details>
 
 ## API
 
-```bash
-$ npx imagemin-simple -h
+### `imagemin-simple -h`
 
-Usage: imagemin-simple <pattern> [options]
-<pattern> Glob pattern to specify files.
+```bash
+imagemin-simple <command>
+
+Commands:
+  imagemin-simple imagemin  The imagemin command.
+  imagemin-simple base64    Turn image into base64.
 
 Options:
-  --plugin       The list of plugins to use.                   [array] [default:
-  ["imagemin-jpegtran","imagemin-pngquant","imagemin-svgo","imagemin-gifsicle"]]
   -v, --version  Show version number                                   [boolean]
   -h, --help     Show help                                             [boolean]
 
-Examples:
-  imagemin-simple '**/*.{jpg,png,JPG,PNG,svg,gif}'
-  imagemin-simple '**/*.png' --plugin imagemin-pngquant
+For more information go to https://github.com/evenchange4/hsu-scripts
+```
 
-For more information go to https://github.com/evenchange4/imagemin-simple
+### `imagemin-simple imagemin -h`
+
+```bash
+Usage: imagemin-simple imagemin <pattern> [options]
+<pattern> Glob pattern to specify files.
+
+Options:
+  --plugin    The list of plugins to use.
+                    [array] [default: ["jpegtran","pngquant","svgo","gifsicle"]]
+  -h, --help  Show help                                                [boolean]
+                                       [boolean]
+
+Examples:
+  imagemin-simple imagemin '**/*.{jpg,png,JPG,PNG,svg,gif}'
+  imagemin-simple imagemin '**/*.png' --plugin pngquant
+```
+
+### `imagemin-simple base64 -h`
+
+```bash
+Usage: imagemin-simple base64 <pattern> [options]
+<pattern> Glob pattern to specify files.
+
+Options:
+  --output-file  The output json file.       [string] [default: "./base64.json"]
+  -h, --help     Show help                                             [boolean]
+
+Examples:
+  imagemin-simple base64 '**/*.{jpg,png,JPG,PNG}'
+  imagemin-simple base64 '**/*.{jpg,png,JPG,PNG}' --output-file results.json
 ```
 
 ## Development
@@ -44,6 +100,7 @@ For more information go to https://github.com/evenchange4/imagemin-simple
 
 ```bash
 $ yarn install --pure-lockfile
+$ npm run test:base64
 ```
 
 ## Test

@@ -1,21 +1,20 @@
 // @flow
 import yargs from 'yargs';
 import chalk from 'chalk';
-import { version } from '../../package.json';
-import { type CliArguments } from '../utils/type.flow';
+import { type ImageminArguments } from '../utils/type.flow';
 import { DEFAULT_PLUGIN } from '../utils/constants';
 
-const main = (): CliArguments => {
+const imagemin = (): ImageminArguments => {
   const {
-    _: [pattern],
+    _: [, pattern],
     plugin,
   } = yargs
     .usage(
       `Usage: ${chalk.green(
         '$0',
-      )} <pattern> [options]\n<pattern>\t Glob pattern to specify files.`,
+      )} imagemin <pattern> [options]\n<pattern>\t Glob pattern to specify files.`,
     )
-    .demandCommand(1, 1, 'Error: Missing <command>')
+    .demandCommand(2, 'Error: Missing <pattern>')
     .strict()
     .options({
       plugin: {
@@ -24,15 +23,11 @@ const main = (): CliArguments => {
         default: DEFAULT_PLUGIN,
       },
     })
-    .example(`$0 '**/*.{jpg,png,JPG,PNG,svg,gif}'`)
-    .example(`$0 '**/*.png' --plugin imagemin-pngquant`)
-    .alias('v', 'version')
+    .example(`$0 imagemin '**/*.{jpg,png,JPG,PNG,svg,gif}'`)
+    .example(`$0 imagemin '**/*.png' --plugin pngquant`)
+    .version(false)
     .alias('h', 'help')
-    .version(version)
     .locale('en')
-    .epilogue(
-      'For more information go to https://github.com/evenchange4/imagemin-simple',
-    )
     .fail((msg, err) => {
       if (err) throw err; // preserve stack
       console.error(chalk.red(msg)); // eslint-disable-line
@@ -43,4 +38,4 @@ const main = (): CliArguments => {
   return { pattern, plugin };
 };
 
-export default main;
+export default imagemin;

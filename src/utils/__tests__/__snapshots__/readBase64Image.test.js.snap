@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return base64Image correctly 1`] = `
+Object {
+  "base64": "data:image/png;base64,mock-toString",
+  "format": "png",
+  "height": 200,
+  "width": 300,
+}
+`;

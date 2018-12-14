@@ -1,4 +1,6 @@
 // @flow
-export { default as main } from './clis/main';
+export * from './clis/index';
 
-export { default as imageminSimple } from './utils/imageminSimple';
+export { default as toImagemin } from './utils/toImagemin';
+export { default as readBase64Image } from './utils/readBase64Image';
+export { default as genBase64 } from './utils/genBase64';
