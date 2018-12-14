@@ -9,6 +9,8 @@ jest.mock('../readBase64Image', () => async () => ({
 }));
 
 it('should return base64 json correctly', async () => {
+  expect.assertions(1);
+
   const pattern = path.resolve(process.cwd(), '**/*.{jpg,png,JPG,PNG}');
   const outputFile = path.resolve(
     process.cwd(),

@@ -2,10 +2,9 @@
 
 exports[`should return base64Image correctly 1`] = `
 Object {
-  "base64": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANAB4DASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAQYEBQcI/8QAJhAAAgEDAQcFAAAAAAAAAAAAAQIDAAQRBQYSExQxQVEhUpHB8P/EABUBAQEAAAAAAAAAAAAAAAAAAAQF/8QAGxEBAAICAwAAAAAAAAAAAAAAAQACAyESIjH/2gAMAwEAAhEDEQA/AOfo7aQIjvjhsxXI81ZPFHDDGzMDxBld3xQtMSo0AAXcQEP1J7/dSb6AchGSSRGhKgeg64pldSPc5ewaPcRW2qWdxMhliimSRo/cAwJFOW3OoW9/rIutMjaOFkwyFcFWJzj93pCsXIniYdVYH4rQNubjltH0iZYoTLcRJK7lBvElT4pGN0sn5zsAT//Z",
-  "format": "jpeg",
-  "height": 449,
-  "imagePath": "/Users/mtk07866/code/GitHub/imagemin-simple/test-content1/project1/images/ai-image.jpg",
-  "width": 1000,
+  "base64": "data:image/png;base64,mock-toString",
+  "format": "png",
+  "height": 200,
+  "width": 300,
 }
 `;
