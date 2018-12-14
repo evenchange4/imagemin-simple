@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return base64 json correctly 1`] = `
+Array [
+  Array [
+    "/Users/mtk07866/code/GitHub/imagemin-simple/node_modules/.cache/base64.json",
+    "{
+  \\"mock-readBase64Image-return-imagePath\\": {
+    \\"base64\\": \\"mock-readBase64Image-return-base64\\",
+    \\"imagePath\\": \\"mock-readBase64Image-return-imagePath\\"
+  }
+}",
+  ],
+]
+`;
