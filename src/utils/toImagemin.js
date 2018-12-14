@@ -16,11 +16,10 @@ const toImagemin = async ({ pattern, plugin }: ImageminArguments) => {
     if (imagePaths.length > 0) log(JSON.stringify(imagePaths, null, 2));
 
     const plugins = [
-      plugin.includes('imagemin-jpegtran') && imageminJpegtran(),
-      plugin.includes('imagemin-pngquant') &&
-        imageminPngquant({ quality: '65-80' }),
-      plugin.includes('imagemin-svgo') && imageminSvgo(),
-      plugin.includes('imagemin-gifsicle') && imageminGifsicle(),
+      plugin.includes('jpegtran') && imageminJpegtran(),
+      plugin.includes('pngquant') && imageminPngquant({ quality: '65-80' }),
+      plugin.includes('svgo') && imageminSvgo(),
+      plugin.includes('gifsicle') && imageminGifsicle(),
     ].filter(Boolean);
 
     const imageminPromises = imagePaths.map(imagePath =>

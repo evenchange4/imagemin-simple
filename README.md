@@ -68,13 +68,14 @@ Usage: imagemin-simple imagemin <pattern> [options]
 <pattern> Glob pattern to specify files.
 
 Options:
-  --plugin    The list of plugins to use.                      [array] [default:
-  ["imagemin-jpegtran","imagemin-pngquant","imagemin-svgo","imagemin-gifsicle"]]
+  --plugin    The list of plugins to use.
+                    [array] [default: ["jpegtran","pngquant","svgo","gifsicle"]]
   -h, --help  Show help                                                [boolean]
+                                       [boolean]
 
 Examples:
   imagemin-simple imagemin '**/*.{jpg,png,JPG,PNG,svg,gif}'
-  imagemin-simple imagemin '**/*.png' --plugin imagemin-pngquant
+  imagemin-simple imagemin '**/*.png' --plugin pngquant
 ```
 
 ### `imagemin-simple base64 -h`

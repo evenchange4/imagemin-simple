@@ -24,7 +24,7 @@ const imagemin = (): ImageminArguments => {
       },
     })
     .example(`$0 imagemin '**/*.{jpg,png,JPG,PNG,svg,gif}'`)
-    .example(`$0 imagemin '**/*.png' --plugin imagemin-pngquant`)
+    .example(`$0 imagemin '**/*.png' --plugin pngquant`)
     .version(false)
     .alias('h', 'help')
     .locale('en')

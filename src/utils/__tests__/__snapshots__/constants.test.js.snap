@@ -8,10 +8,10 @@ Object {
     "!coverage",
   ],
   "DEFAULT_PLUGIN": Array [
-    "imagemin-jpegtran",
-    "imagemin-pngquant",
-    "imagemin-svgo",
-    "imagemin-gifsicle",
+    "jpegtran",
+    "pngquant",
+    "svgo",
+    "gifsicle",
   ],
   "__esModule": true,
 }

@@ -2,12 +2,7 @@
 // @flow
 const mockCliArguments = {
   pattern: 'pattern',
-  plugin: [
-    'imagemin-jpegtran',
-    'imagemin-pngquant',
-    'imagemin-svgo',
-    'imagemin-gifsicle',
-  ],
+  plugin: ['jpegtran', 'pngquant', 'svgo', 'gifsicle'],
 };
 
 it('should exec toImagemin correctly', async () => {
