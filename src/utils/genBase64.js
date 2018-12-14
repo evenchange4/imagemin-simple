@@ -1,5 +1,5 @@
 // @flow
-import fs from 'fs';
+import { writeJson } from 'fs-extra';
 import * as R from 'ramda';
 import globby from 'globby';
 import { DEFAULT_PATTERN } from './constants';
@@ -13,16 +13,16 @@ const genBase64 = async ({ pattern, outputFile }: Base64Arguments) => {
     if (imagePaths.length > 0) log(JSON.stringify(imagePaths, null, 2));
 
     // Note: 1. gen base64 images and metadata
-    const base64Images: Base64Image = await Promise.all(
+    const base64Images: Array<Base64Image> = await Promise.all(
       imagePaths.map(readBase64Image),
     );
 
-    // Note: 2. output json format
+    // Note: 2. output json format $FlowFixMe
     const results: { [string]: Base64Image } = R.indexBy(
       R.prop('imagePath'),
       base64Images,
     );
-    fs.writeFileSync(outputFile, JSON.stringify(results, null, 2));
+    writeJson(outputFile, results);
     log(
       `> Generate ${imagePaths.length} images in base64 format successfully.`,
     );

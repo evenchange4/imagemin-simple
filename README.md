@@ -100,6 +100,7 @@ Examples:
 
 ```bash
 $ yarn install --pure-lockfile
+$ npm run test:base64
 ```
 
 ## Test

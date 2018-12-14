@@ -1,6 +1,6 @@
 // @flow
 import path from 'path';
-import fs from 'fs';
+import * as fs from 'fs-extra';
 import genBase64 from '../genBase64';
 
 jest.mock('../readBase64Image', () => async () => ({
@@ -10,8 +10,11 @@ jest.mock('../readBase64Image', () => async () => ({
 
 it('should return base64 json correctly', async () => {
   const pattern = path.resolve(process.cwd(), '**/*.{jpg,png,JPG,PNG}');
-  const outputFile = path.resolve(process.cwd(), './geBase64.test.json');
-  const spy = jest.spyOn(fs, 'writeFileSync');
+  const outputFile = path.resolve(
+    process.cwd(),
+    'node_modules/.cache/geBase64.test.json',
+  );
+  const spy = jest.spyOn(fs, 'writeJson');
 
   await genBase64({ pattern, outputFile });
   expect(spy.mock.calls).toMatchSnapshot();
