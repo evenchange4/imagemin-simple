@@ -1,5 +1,11 @@
 ## Change Log
 
+### v1.0.0 (2018/12/14 08:23 +00:00)
+
+- [67aea0f](https://github.com/evenchange4/imagemin-simple/commit/67aea0f188bf35bcbe197eebd997b7a237798a7f) 1.0.0 (@evenchange4)
+- [#10](https://github.com/evenchange4/imagemin-simple/pull/10) feat(cli): add base64 support [BREAKING](#10) (@evenchange4)
+- [60441b3](https://github.com/evenchange4/imagemin-simple/commit/60441b3c1107ddcf398f403f01588c14c1ab6e70) docs(CHANGELOG): release 0.1.1 (@evenchange4)
+
 ### v0.1.1 (2018/12/12 08:46 +00:00)
 
 - [a53a590](https://github.com/evenchange4/imagemin-simple/commit/a53a5906af681741837af659db67d3b592e3acc3) 0.1.1 (@evenchange4)
