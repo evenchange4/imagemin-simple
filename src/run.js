@@ -1,6 +1,6 @@
 // @flow
-import { help, imagemin as imageminCli } from './clis/index';
-import { imageminSimple } from './index';
+import { help, imagemin, base64 } from './clis/index';
+import { toImagemin, genBase64 } from './index';
 
 const run = async () => {
   const subCommand: ?string = process.argv[2];
@@ -8,8 +8,15 @@ const run = async () => {
   try {
     switch (subCommand) {
       case 'imagemin': {
-        const cliArguments = imageminCli();
-        await imageminSimple(cliArguments);
+        const cliArguments = imagemin();
+        await toImagemin(cliArguments);
+
+        break;
+      }
+
+      case 'base64': {
+        const cliArguments = base64();
+        await genBase64(cliArguments);
 
         break;
       }

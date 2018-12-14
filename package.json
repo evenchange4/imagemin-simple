@@ -18,7 +18,7 @@
     "test": "NODE_ENV='test' jest --coverage",
     "test:watch": "npm run test -- --watch",
     "flow": "flow",
-    "flow-coverage": "hsu-scripts flow --threshold 79",
+    "flow-coverage": "hsu-scripts flow --threshold 75",
     "eslint": "eslint ./",
     "format": "prettier --write '**/*.{js,json,md,css,yaml,yml}' '*.{js,json,md,css,yaml,yml}'",
     "changelog": "github-changes -o evenchange4 -r imagemin-simple -b master -f ./CHANGELOG.md --order-semver --use-commit-body"
@@ -32,6 +32,7 @@
     "imagemin-jpegtran": "^6.0.0",
     "imagemin-pngquant": "^6.0.0",
     "imagemin-svgo": "^7.0.0",
+    "ramda": "^0.26.1",
     "sharp": "^0.21.1",
     "yargs": "^12.0.5"
   },

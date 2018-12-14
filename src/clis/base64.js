@@ -1,13 +1,13 @@
 // @flow
 import yargs from 'yargs';
 import chalk from 'chalk';
-import { type ImageminArguments } from '../utils/type.flow';
-import { DEFAULT_PLUGIN } from '../utils/constants';
+import { type Base64Arguments } from '../utils/type.flow';
+import { DEFAULT_OUTPUT_FILE } from '../utils/constants';
 
-const imagemin = (): ImageminArguments => {
+const base64 = (): Base64Arguments => {
   const {
     _: [, pattern],
-    plugin,
+    outputFile,
   } = yargs
     .usage(
       `Usage: ${chalk.green(
@@ -17,14 +17,15 @@ const imagemin = (): ImageminArguments => {
     .demandCommand(2, 'Error: Missing <pattern>')
     .strict()
     .options({
-      plugin: {
-        describe: `The list of plugins to use.`,
-        type: 'array',
-        default: DEFAULT_PLUGIN,
+      'output-file': {
+        describe: `The output json file.`,
+        nargs: 1,
+        type: 'string',
+        default: DEFAULT_OUTPUT_FILE,
       },
     })
-    .example(`$0 imagemin '**/*.{jpg,png,JPG,PNG,svg,gif}'`)
-    .example(`$0 imagemin '**/*.png' --plugin imagemin-pngquant`)
+    .example(`$0 base64 '**/*.{jpg,png,JPG,PNG}'`)
+    .example(`$0 base64 '**/*.{jpg,png,JPG,PNG}' --output-file results.json`)
     .version(false)
     .alias('h', 'help')
     .locale('en')
@@ -35,7 +36,7 @@ const imagemin = (): ImageminArguments => {
       process.exit(1);
     }).argv;
 
-  return { pattern, plugin };
+  return { pattern, outputFile };
 };
 
-export default imagemin;
+export default base64;
