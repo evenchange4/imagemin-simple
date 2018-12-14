@@ -12,7 +12,7 @@ const imagemin = (): ImageminArguments => {
     .usage(
       `Usage: ${chalk.green(
         '$0',
-      )} <pattern> [options]\n<pattern>\t Glob pattern to specify files.`,
+      )} imagemin <pattern> [options]\n<pattern>\t Glob pattern to specify files.`,
     )
     .demandCommand(2, 'Error: Missing <pattern>')
     .strict()

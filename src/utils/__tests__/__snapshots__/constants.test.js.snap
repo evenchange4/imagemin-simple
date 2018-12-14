@@ -2,8 +2,10 @@
 
 exports[`should return constants correctly 1`] = `
 Object {
+  "DEFAULT_OUTPUT_FILE": "./base64.json",
   "DEFAULT_PATTERN": Array [
     "!node_modules",
+    "!coverage",
   ],
   "DEFAULT_PLUGIN": Array [
     "imagemin-jpegtran",
