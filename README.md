@@ -95,7 +95,7 @@ Examples:
 
 ## Development
 
-- node 11.4.0
+- node 11.5.0
 - yarn 1.12.3
 
 ```bash
@@ -117,8 +117,8 @@ $ yarn run eslint
 
 ```bash
 $ npm version patch
-$ git push
 $ npm run changelog
+git commit & push
 ```
 
 ---

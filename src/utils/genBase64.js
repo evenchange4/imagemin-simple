@@ -1,4 +1,5 @@
 // @flow
+import * as fs from 'fs-extra';
 import fsJson from 'fs-extra/lib/json';
 import * as R from 'ramda';
 import globby from 'globby';
@@ -22,6 +23,7 @@ const genBase64 = async ({ pattern, outputFile }: Base64Arguments) => {
       R.prop('imagePath'),
       base64Images,
     );
+    fs.ensureFileSync(outputFile);
     fsJson.writeJson(outputFile, results);
     log(
       `> Generate ${imagePaths.length} images in base64 format successfully.`,
