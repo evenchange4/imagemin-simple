@@ -17,7 +17,7 @@ const toImagemin = async ({ pattern, plugin }: ImageminArguments) => {
 
     const plugins = [
       plugin.includes('jpegtran') && imageminJpegtran(),
-      plugin.includes('pngquant') && imageminPngquant({ quality: '65-80' }),
+      plugin.includes('pngquant') && imageminPngquant({ quality: [0.65, 0.8] }),
       plugin.includes('svgo') && imageminSvgo(),
       plugin.includes('gifsicle') && imageminGifsicle(),
     ].filter(Boolean);

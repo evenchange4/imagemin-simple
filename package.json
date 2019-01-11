@@ -26,13 +26,13 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.2.0",
-    "chalk": "^2.4.1",
+    "chalk": "^2.4.2",
     "fs-extra": "^7.0.1",
-    "globby": "^8.0.1",
-    "imagemin": "^6.0.0",
+    "globby": "^8.0.2",
+    "imagemin": "^6.1.0",
     "imagemin-gifsicle": "^6.0.1",
     "imagemin-jpegtran": "^6.0.0",
-    "imagemin-pngquant": "^6.0.0",
+    "imagemin-pngquant": "^7.0.0",
     "imagemin-svgo": "^7.0.0",
     "ramda": "^0.26.1",
     "sharp": "^0.21.1",
@@ -97,7 +97,7 @@
       "pre-commit": "lint-staged"
     }
   },
-  "description": "Replace images with minified one.",
+  "description": "Replace images with minified one and generate small base64 image.",
   "author": "Michael Hsu <evenchange4@gmail.com>",
   "license": "MIT",
   "bugs": {
