@@ -1,6 +1,20 @@
-## Unreleased (2018-12-20)
+## Unreleased (2019-01-11)
 
+## <small>1.0.1 (2019-01-11)</small>
+
+- 1.0.1 ([413a36f](https://github.com/evenchange4/imagemin-simple/commit/413a36f))
+- fix(deps): update dependency imagemin-pngquant to v7 (#22) ([dac0ab5](https://github.com/evenchange4/imagemin-simple/commit/dac0ab5)), closes [#22](https://github.com/evenchange4/imagemin-simple/issues/22)
+- chore: ncu update & upgrade jest to use babel 7 & use node 11.5.0 & switch changelog tools ([dff8b88](https://github.com/evenchange4/imagemin-simple/commit/dff8b88))
+- chore(changelog): remove useless changelog tools prarms ([aaaba49](https://github.com/evenchange4/imagemin-simple/commit/aaaba49))
 - chore(deps): update dependency @babel/node to v7.2.2 (#11) ([8b2ac42](https://github.com/evenchange4/imagemin-simple/commit/8b2ac42)), closes [#11](https://github.com/evenchange4/imagemin-simple/issues/11) [#8203](https://github.com/evenchange4/imagemin-simple/issues/8203)
+- chore(deps): update dependency eslint to v5.11.1 (#14) ([dc699b4](https://github.com/evenchange4/imagemin-simple/commit/dc699b4)), closes [#14](https://github.com/evenchange4/imagemin-simple/issues/14)
+- chore(deps): update dependency eslint to v5.12.0 (#17) ([a02e81e](https://github.com/evenchange4/imagemin-simple/commit/a02e81e)), closes [#17](https://github.com/evenchange4/imagemin-simple/issues/17)
+- chore(deps): update dependency flow-bin to v0.90.0 (#21) ([2d7a5b2](https://github.com/evenchange4/imagemin-simple/commit/2d7a5b2)), closes [#21](https://github.com/evenchange4/imagemin-simple/issues/21)
+- chore(deps): update dependency hsu-scripts to v1 (#16) ([ae02bdd](https://github.com/evenchange4/imagemin-simple/commit/ae02bdd)), closes [#16](https://github.com/evenchange4/imagemin-simple/issues/16)
+- chore(deps): update dependency hsu-scripts to v1.0.2 (#18) ([b14b5ed](https://github.com/evenchange4/imagemin-simple/commit/b14b5ed)), closes [#18](https://github.com/evenchange4/imagemin-simple/issues/18)
+- chore(deps): update dependency husky to v1.3.1 (#15) ([7eb120f](https://github.com/evenchange4/imagemin-simple/commit/7eb120f)), closes [#15](https://github.com/evenchange4/imagemin-simple/issues/15)
+- chore(deps): update dependency jest to v24.0.0-alpha.10 (#19) ([8e945fc](https://github.com/evenchange4/imagemin-simple/commit/8e945fc)), closes [#19](https://github.com/evenchange4/imagemin-simple/issues/19)
+- chore(deps): update dependency jest to v24.0.0-alpha.11 (#20) ([80da4b6](https://github.com/evenchange4/imagemin-simple/commit/80da4b6)), closes [#20](https://github.com/evenchange4/imagemin-simple/issues/20)
 - docs(CHANGELOG): release 1.0.0 ([03ca310](https://github.com/evenchange4/imagemin-simple/commit/03ca310))
 
 ## 1.0.0 (2018-12-14)
