@@ -1,6 +1,6 @@
 # Imagemin-simple
 
-> Replace images with minified one.
+> Replace images with minified one and generate small base64 image.
 
 [![Travis][build-badge]][build]
 [![Codecov Status][codecov-badge]][codecov]
@@ -95,8 +95,8 @@ Examples:
 
 ## Development
 
-- node 11.5.0
-- yarn 1.12.3
+- node 11.6.0
+- yarn 1.13.0
 
 ```bash
 $ yarn install --pure-lockfile
