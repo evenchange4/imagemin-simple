@@ -1,4 +1,21 @@
-## Unreleased (2019-01-11)
+## Unreleased (2019-02-11)
+
+## <small>1.0.2 (2019-02-11)</small>
+
+- 1.0.2 ([323a9fd](https://github.com/evenchange4/imagemin-simple/commit/323a9fd))
+- chore(deps): ncu update ([0511cd8](https://github.com/evenchange4/imagemin-simple/commit/0511cd8))
+- chore(deps): update dependency eslint to v5.12.1 (#26) ([9db2ada](https://github.com/evenchange4/imagemin-simple/commit/9db2ada)), closes [#26](https://github.com/evenchange4/imagemin-simple/issues/26)
+- chore(deps): update dependency flow-bin to v0.91.0 (#25) ([dfda462](https://github.com/evenchange4/imagemin-simple/commit/dfda462)), closes [#25](https://github.com/evenchange4/imagemin-simple/issues/25)
+- chore(deps): update dependency jest to v24.0.0 (#31) ([d1a8cf5](https://github.com/evenchange4/imagemin-simple/commit/d1a8cf5)), closes [#31](https://github.com/evenchange4/imagemin-simple/issues/31)
+- chore(deps): update dependency jest to v24.0.0-alpha.12 (#24) ([7ab48b2](https://github.com/evenchange4/imagemin-simple/commit/7ab48b2)), closes [#24](https://github.com/evenchange4/imagemin-simple/issues/24)
+- chore(deps): update dependency jest to v24.0.0-alpha.13 (#29) ([9b72227](https://github.com/evenchange4/imagemin-simple/commit/9b72227)), closes [#29](https://github.com/evenchange4/imagemin-simple/issues/29)
+- chore(deps): update dependency jest to v24.0.0-alpha.15 (#30) ([ea45888](https://github.com/evenchange4/imagemin-simple/commit/ea45888)), closes [#30](https://github.com/evenchange4/imagemin-simple/issues/30)
+- chore(deps): update dependency lint-staged to v8.1.1 (#32) ([b580053](https://github.com/evenchange4/imagemin-simple/commit/b580053)), closes [#32](https://github.com/evenchange4/imagemin-simple/issues/32)
+- chore(deps): update dependency prettier to v1.16.0 (#27) ([89d0d9c](https://github.com/evenchange4/imagemin-simple/commit/89d0d9c)), closes [#27](https://github.com/evenchange4/imagemin-simple/issues/27)
+- chore(deps): update dependency prettier to v1.16.1 (#28) ([ad6fab2](https://github.com/evenchange4/imagemin-simple/commit/ad6fab2)), closes [#28](https://github.com/evenchange4/imagemin-simple/issues/28)
+- chore(deps): update dependency prettier to v1.16.2 (#33) ([d196493](https://github.com/evenchange4/imagemin-simple/commit/d196493)), closes [#33](https://github.com/evenchange4/imagemin-simple/issues/33)
+- fix(deps): update dependency globby to v9 (#23) ([681912c](https://github.com/evenchange4/imagemin-simple/commit/681912c)), closes [#23](https://github.com/evenchange4/imagemin-simple/issues/23)
+- docs(CHANGELOG): release 1.0.1 ([886f82c](https://github.com/evenchange4/imagemin-simple/commit/886f82c))
 
 ## <small>1.0.1 (2019-01-11)</small>
 
