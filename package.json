@@ -36,7 +36,7 @@
     "imagemin-svgo": "^7.0.0",
     "ramda": "^0.26.1",
     "sharp": "^0.21.3",
-    "yargs": "^12.0.5"
+    "yargs": "^13.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.2.2",
