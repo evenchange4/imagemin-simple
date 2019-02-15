@@ -109,6 +109,8 @@ $ npm run test:base64
 $ npm run test:base64-cwd
 ```
 
+> NOTE: Please check [mrmlnc/fast-glob#cwd](https://github.com/mrmlnc/fast-glob#cwd) for more detail.
+
 ## Development
 
 - node 11.10.0
