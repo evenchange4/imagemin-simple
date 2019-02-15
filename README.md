@@ -97,9 +97,10 @@ Examples:
 
 #### cwd
 
-The current working directory. (`process.cwd()`)
+The current working directory.
 
-Example:
+- Default: `process.cwd()`
+- Examples:
 
 ```bash
 # Default
