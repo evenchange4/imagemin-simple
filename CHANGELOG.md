@@ -1,4 +1,15 @@
-## Unreleased (2019-02-11)
+## Unreleased (2019-02-15)
+
+## 1.1.0 (2019-02-15)
+
+- 1.1.0 ([985463d](https://github.com/evenchange4/imagemin-simple/commit/985463d))
+- feat(base64): add cwd option (#45) ([9513ff6](https://github.com/evenchange4/imagemin-simple/commit/9513ff6)), closes [#45](https://github.com/evenchange4/imagemin-simple/issues/45)
+- chore(deps): update dependency codecov to v3.2.0 (#41) ([b93b5d9](https://github.com/evenchange4/imagemin-simple/commit/b93b5d9)), closes [#41](https://github.com/evenchange4/imagemin-simple/issues/41)
+- chore(deps): update dependency conventional-changelog-cli to v2.0.12 (#44) ([0fb1b02](https://github.com/evenchange4/imagemin-simple/commit/0fb1b02)), closes [#44](https://github.com/evenchange4/imagemin-simple/issues/44)
+- chore(deps): update dependency flow-bin to v0.93.0 (#42) ([6cd4e59](https://github.com/evenchange4/imagemin-simple/commit/6cd4e59)), closes [#42](https://github.com/evenchange4/imagemin-simple/issues/42)
+- chore(deps): update dependency lint-staged to v8.1.4 (#43) ([869c9c1](https://github.com/evenchange4/imagemin-simple/commit/869c9c1)), closes [#43](https://github.com/evenchange4/imagemin-simple/issues/43)
+- fix(deps): update dependency yargs to v13 (#40) ([8014969](https://github.com/evenchange4/imagemin-simple/commit/8014969)), closes [#40](https://github.com/evenchange4/imagemin-simple/issues/40)
+- docs(CHANGELOG): release 1.0.2 ([6a643e1](https://github.com/evenchange4/imagemin-simple/commit/6a643e1))
 
 ## <small>1.0.2 (2019-02-11)</small>
 
