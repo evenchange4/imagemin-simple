@@ -8,6 +8,7 @@ const base64 = (): Base64Arguments => {
   const {
     _: [, pattern],
     outputFile,
+    cwd,
   } = yargs
     .usage(
       `Usage: ${chalk.green(
@@ -23,9 +24,14 @@ const base64 = (): Base64Arguments => {
         type: 'string',
         default: DEFAULT_OUTPUT_FILE,
       },
+      cwd: {
+        describe: `Set current working directory.`,
+        type: 'string',
+      },
     })
     .example(`$0 base64 '**/*.{jpg,png,JPG,PNG}'`)
     .example(`$0 base64 '**/*.{jpg,png,JPG,PNG}' --output-file results.json`)
+    .example(`$0 base64 '**/*.png' --cwd './docs'`)
     .version(false)
     .alias('h', 'help')
     .locale('en')
@@ -36,7 +42,7 @@ const base64 = (): Base64Arguments => {
       process.exit(1);
     }).argv;
 
-  return { pattern, outputFile };
+  return { pattern, outputFile, cwd };
 };
 
 export default base64;

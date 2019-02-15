@@ -86,16 +86,32 @@ Usage: imagemin-simple base64 <pattern> [options]
 
 Options:
   --output-file  The output json file.       [string] [default: "./base64.json"]
+  --cwd          Set current working directory.                         [string]
   -h, --help     Show help                                             [boolean]
 
 Examples:
   imagemin-simple base64 '**/*.{jpg,png,JPG,PNG}'
   imagemin-simple base64 '**/*.{jpg,png,JPG,PNG}' --output-file results.json
+  imagemin-simple base64 '**/*.png' --cwd './docs'
+```
+
+#### cwd
+
+The current working directory. (`process.cwd()`)
+
+Example:
+
+```bash
+# Default
+$ npm run test:base64
+
+# Set custom cwd
+$ npm run test:base64-cwd
 ```
 
 ## Development
 
-- node 11.9.0
+- node 11.10.0
 - yarn 1.13.0
 
 ```bash

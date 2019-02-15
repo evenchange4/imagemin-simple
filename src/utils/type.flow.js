@@ -8,6 +8,7 @@ export type ImageminArguments = {
 export type Base64Arguments = {
   pattern: string,
   outputFile: string,
+  cwd?: string,
 };
 
 export type Base64Image = {
