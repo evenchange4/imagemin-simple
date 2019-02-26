@@ -128,6 +128,8 @@ $ npm run test:base64
 $ yarn run build
 $ yarn run flow-coverage
 $ yarn run test:watch
+$ yarn run test:base64
+$ yarn run test:base64-cwd
 $ yarn run format
 $ yarn run eslint
 ```
