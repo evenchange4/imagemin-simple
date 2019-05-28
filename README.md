@@ -114,8 +114,8 @@ $ npm run test:base64-cwd
 
 ## Development
 
-- node 11.10.0
-- yarn 1.13.0
+- node 12.3.1
+- yarn 1.16.0
 
 ```bash
 $ yarn install --pure-lockfile
