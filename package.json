@@ -29,7 +29,7 @@
     "@babel/runtime": "^7.4.5",
     "chalk": "^2.4.2",
     "fs-extra": "^8.0.1",
-    "globby": "^9.2.0",
+    "globby": "^10.0.0",
     "imagemin": "^6.1.0",
     "imagemin-gifsicle": "^6.0.1",
     "imagemin-jpegtran": "^6.0.0",
