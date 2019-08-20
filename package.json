@@ -48,7 +48,7 @@
     "flow-bin": "0.98.1",
     "hsu-scripts": "1.0.7",
     "husky": "2.3.0",
-    "jest": "24.8.0",
+    "jest": "24.9.0",
     "lint-staged": "8.1.7",
     "prettier": "1.17.1"
   },
