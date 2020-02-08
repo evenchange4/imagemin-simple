@@ -42,7 +42,7 @@
   "devDependencies": {
     "@babel/core": "7.4.5",
     "@babel/node": "7.4.5",
-    "codecov": "3.5.0",
+    "codecov": "3.6.5",
     "conventional-changelog-cli": "2.0.22",
     "eslint": "5.16.0",
     "flow-bin": "0.98.1",
