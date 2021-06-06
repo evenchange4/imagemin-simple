@@ -44,7 +44,7 @@
     "@babel/node": "7.4.5",
     "codecov": "3.5.0",
     "conventional-changelog-cli": "2.0.22",
-    "eslint": "5.16.0",
+    "eslint": "7.28.0",
     "flow-bin": "0.98.1",
     "hsu-scripts": "1.0.7",
     "husky": "2.3.0",
