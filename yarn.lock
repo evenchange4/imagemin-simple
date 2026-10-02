@@ -3453,10 +3453,10 @@ flow-annotation-check@1.8.1:
     glob "7.1.1"
     load-pkg "^3.0.1"
 
-flow-bin@0.98.1:
-  version "0.98.1"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.98.1.tgz#a8d781621c91703df69928acc83c9777e2fcbb49"
-  integrity sha512-y1YzQgbFUX4EG6h2EO8PhyJeS0VxNgER8XsTwU8IXw4KozfneSmGVgw8y3TwAOza7rVhTlHEoli1xNuNW1rhPw==
+flow-bin@0.334.0:
+  version "0.334.0"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.334.0.tgz#75dc2fd59ec3135aa7d544d7c52bae35ed2831aa"
+  integrity sha512-yxo8AdJwRroEivEIZFzApPCyVsauhJy3T+nlbjbzyhO+9tzuGZIbt7hbHtAi1NCgQ9FkzFU1NNXF6ODayU+vfA==
 
 flow-copy-source@^2.0.3:
   version "2.0.6"
