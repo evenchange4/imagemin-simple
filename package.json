@@ -43,7 +43,7 @@
     "@babel/core": "7.4.5",
     "@babel/node": "7.4.5",
     "codecov": "3.5.0",
-    "conventional-changelog-cli": "2.0.22",
+    "conventional-changelog-cli": "2.2.2",
     "eslint": "5.16.0",
     "flow-bin": "0.98.1",
     "hsu-scripts": "1.0.7",
